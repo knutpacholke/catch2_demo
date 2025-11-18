@@ -1,4 +1,5 @@
 /home/knut/workspace/cpp/catch2_demo/build/CMakeFiles/libfizzbuzz.dir
+/home/knut/workspace/cpp/catch2_demo/build/CMakeFiles/tdd_fizzbuzz_bin.dir
 /home/knut/workspace/cpp/catch2_demo/build/CMakeFiles/edit_cache.dir
 /home/knut/workspace/cpp/catch2_demo/build/CMakeFiles/rebuild_cache.dir
 /home/knut/workspace/cpp/catch2_demo/build/tests/CMakeFiles/Experimental.dir

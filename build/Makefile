@@ -130,6 +130,19 @@ libfizzbuzz/fast:
 .PHONY : libfizzbuzz/fast
 
 #=============================================================================
+# Target rules for targets named tdd_fizzbuzz_bin
+
+# Build rule for target.
+tdd_fizzbuzz_bin: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tdd_fizzbuzz_bin
+.PHONY : tdd_fizzbuzz_bin
+
+# fast build rule for target.
+tdd_fizzbuzz_bin/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tdd_fizzbuzz_bin.dir/build.make CMakeFiles/tdd_fizzbuzz_bin.dir/build
+.PHONY : tdd_fizzbuzz_bin/fast
+
+#=============================================================================
 # Target rules for targets named Experimental
 
 # Build rule for target.
@@ -530,6 +543,30 @@ src/fizzbuzz.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfizzbuzz.dir/build.make CMakeFiles/libfizzbuzz.dir/src/fizzbuzz.cpp.s
 .PHONY : src/fizzbuzz.cpp.s
 
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tdd_fizzbuzz_bin.dir/build.make CMakeFiles/tdd_fizzbuzz_bin.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tdd_fizzbuzz_bin.dir/build.make CMakeFiles/tdd_fizzbuzz_bin.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tdd_fizzbuzz_bin.dir/build.make CMakeFiles/tdd_fizzbuzz_bin.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -568,9 +605,13 @@ help:
 	@echo "... NightlyUpdate"
 	@echo "... catch2_demo_test"
 	@echo "... libfizzbuzz"
+	@echo "... tdd_fizzbuzz_bin"
 	@echo "... src/fizzbuzz.o"
 	@echo "... src/fizzbuzz.i"
 	@echo "... src/fizzbuzz.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

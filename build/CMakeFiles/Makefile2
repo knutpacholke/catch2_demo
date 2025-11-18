@@ -64,11 +64,13 @@ CMAKE_BINARY_DIR = /home/knut/workspace/cpp/catch2_demo/build
 
 # The main recursive "all" target.
 all: CMakeFiles/libfizzbuzz.dir/all
+all: CMakeFiles/tdd_fizzbuzz_bin.dir/all
 all: tests/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/libfizzbuzz.dir/codegen
+codegen: CMakeFiles/tdd_fizzbuzz_bin.dir/codegen
 codegen: tests/codegen
 .PHONY : codegen
 
@@ -78,6 +80,7 @@ preinstall: tests/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/libfizzbuzz.dir/clean
+clean: CMakeFiles/tdd_fizzbuzz_bin.dir/clean
 clean: tests/clean
 .PHONY : clean
 
@@ -159,6 +162,38 @@ CMakeFiles/libfizzbuzz.dir/codegen:
 CMakeFiles/libfizzbuzz.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libfizzbuzz.dir/build.make CMakeFiles/libfizzbuzz.dir/clean
 .PHONY : CMakeFiles/libfizzbuzz.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tdd_fizzbuzz_bin.dir
+
+# All Build rule for target.
+CMakeFiles/tdd_fizzbuzz_bin.dir/all: CMakeFiles/libfizzbuzz.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tdd_fizzbuzz_bin.dir/build.make CMakeFiles/tdd_fizzbuzz_bin.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tdd_fizzbuzz_bin.dir/build.make CMakeFiles/tdd_fizzbuzz_bin.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/knut/workspace/cpp/catch2_demo/build/CMakeFiles --progress-num=5,6 "Built target tdd_fizzbuzz_bin"
+.PHONY : CMakeFiles/tdd_fizzbuzz_bin.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tdd_fizzbuzz_bin.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/knut/workspace/cpp/catch2_demo/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tdd_fizzbuzz_bin.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/knut/workspace/cpp/catch2_demo/build/CMakeFiles 0
+.PHONY : CMakeFiles/tdd_fizzbuzz_bin.dir/rule
+
+# Convenience name for target.
+tdd_fizzbuzz_bin: CMakeFiles/tdd_fizzbuzz_bin.dir/rule
+.PHONY : tdd_fizzbuzz_bin
+
+# codegen rule for target.
+CMakeFiles/tdd_fizzbuzz_bin.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tdd_fizzbuzz_bin.dir/build.make CMakeFiles/tdd_fizzbuzz_bin.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/knut/workspace/cpp/catch2_demo/build/CMakeFiles --progress-num=5,6 "Finished codegen for target tdd_fizzbuzz_bin"
+.PHONY : CMakeFiles/tdd_fizzbuzz_bin.dir/codegen
+
+# clean rule for target.
+CMakeFiles/tdd_fizzbuzz_bin.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tdd_fizzbuzz_bin.dir/build.make CMakeFiles/tdd_fizzbuzz_bin.dir/clean
+.PHONY : CMakeFiles/tdd_fizzbuzz_bin.dir/clean
 
 #=============================================================================
 # Target rules for target tests/CMakeFiles/Experimental.dir
