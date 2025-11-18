@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibfizzbuzz.a CMakeFiles/libfizzbuzz.dir/src/fizzbuzz.cpp.o
+/usr/bin/ranlib liblibfizzbuzz.a

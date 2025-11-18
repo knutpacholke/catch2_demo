@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/knut/workspace/cpp/catch2_demo/build/cmake_install.cmake",
+		"/home/knut/workspace/cpp/catch2_demo/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

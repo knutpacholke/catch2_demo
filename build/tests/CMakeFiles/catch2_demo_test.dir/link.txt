@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/catch2_demo_test.dir/link.d CMakeFiles/catch2_demo_test.dir/test_tdd_fizzbuzz.cpp.o -o catch2_demo_test  ../liblibfizzbuzz.a /usr/local/lib/libCatch2.a

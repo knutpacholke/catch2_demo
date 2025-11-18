@@ -1,0 +1,5 @@
+add_test( [==[Can call FizzBuzz function]==] /home/knut/workspace/cpp/catch2_demo/build/tests/catch2_demo_test [==[Can call FizzBuzz function]==]  )
+set_tests_properties( [==[Can call FizzBuzz function]==] PROPERTIES WORKING_DIRECTORY /home/knut/workspace/cpp/catch2_demo/build/tests SKIP_RETURN_CODE 4)
+add_test( [==[For input as 3 output should be Fizz]==] /home/knut/workspace/cpp/catch2_demo/build/tests/catch2_demo_test [==[For input as 3 output should be Fizz]==]  )
+set_tests_properties( [==[For input as 3 output should be Fizz]==] PROPERTIES WORKING_DIRECTORY /home/knut/workspace/cpp/catch2_demo/build/tests SKIP_RETURN_CODE 4)
+set( catch2_demo_test_TESTS [==[Can call FizzBuzz function]==] [==[For input as 3 output should be Fizz]==])
